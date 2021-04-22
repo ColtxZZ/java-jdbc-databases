@@ -43,8 +43,8 @@ public class GetOrderDao {
                 orderDto.setCustomerId(rs.getLong("order_costumer_id"));
                 orderDto.setDate(rs.getTimestamp("order_date"));
                 orderDto.setStatus(rs.getString("order_status"));
-
             }
+
         } catch (SQLException ex) {
             ExceptionHandler.handleException(ex);
         }
